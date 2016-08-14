@@ -33,10 +33,39 @@ void test()
 	arr->~ArrayStack();
 }
 
+
+
+void string_test()
+{
+
+	ArrayStack<string> *arr = new ArrayStack<string>();
+
+	cout << "------------------string test---------------" <<endl;
+
+	arr->push("a");
+	arr->push("b");
+	arr->push("c");
+	arr->push("d");
+
+	cout << "empty -> " << arr->empty() << endl;
+
+	cout << "size -> " << arr->size() << endl;
+
+	arr->pop();
+
+	while(!arr->empty()){
+		cout << arr->pop() << endl;
+	}
+
+	arr->~ArrayStack();
+}
+
 int main(){
 
 	cout<< "----------------main-------------" <<endl;
 	test();
+
+	string_test();
 
 	return 0;
 }

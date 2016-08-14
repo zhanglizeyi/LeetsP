@@ -66,7 +66,7 @@ template<class T>void ArrayStack<T>::push(T t)
 //pop
 template<class T>T ArrayStack<T>::pop()
 {
-	int tmp = arr[count-1];
+	T tmp = arr[count-1];
 	count--;
 	return tmp;
 }
