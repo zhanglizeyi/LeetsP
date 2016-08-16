@@ -17,6 +17,11 @@
 	mid -- the first block ending, and also the second block begain (0, n) (n+1)
 	end -- the second end (m)
 
+
+
+	TIME COMPLEXITY: O(N*log(N))
+	
+
 */
 
 #include <iostream>
