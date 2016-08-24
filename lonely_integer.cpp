@@ -16,31 +16,35 @@
 #include <iostream>
 #include <algorithm>
 using namespace std;
-int lonelyinteger(vector < int > a, int lit) {
+int lonelyinteger(vector < int > a) {
     //the number can not bigger than lit
     //find the biggest unique non-repeatted elements
     int retVal = 0; 
+    int arr[1000000];
     if(a.size() == 1) return a.at(0);
-    int arr[a.size()];
-    int count = 0;
     
-    for(int j=0; j<a.size(); j++){
-        for(int i=j; i<a.size(); i++){
-            if(a.at(j) == a.at(i)){
-                count = 1;
-            }
-            //if(retVal <= a.at(i))
-             //   retVal = a.at(i);
-        }
-        //if(count >= 1){
-            arr[j] = a.at(j);
-            cout << arr[j] << " ";
-        //}
-        count =0;
+    for(int i=0; i<a.size(); i++)
+    {
+        arr[a.at(i)]++; //count method
+        cout << "a.at(i) " << a.at(i) << " arr " << arr[a.at(i)] << endl;     
+        if(a.at(i) > retVal) retVal = a.at(i);
+        cout << "retVal: " << retVal << endl;
     }
-    cout<< endl;
+
+    //count in there position to get repeatation, if true ++
+    //in the meanwhile, retVal take a largest in the vector
     
-return retVal;
+
+cout << "==========================================" <<endl;
+    int mx = -1;
+    for(int i=0; i<=retVal; i++)
+    {
+        if(arr[i] == 1) mx = i;
+        //if not equal return the pervious store
+    }
+
+
+return mx;
 
 }
 int main() {
@@ -56,7 +60,7 @@ int main() {
         _a.push_back(_a_item);
     }
     
-    res = lonelyinteger(_a, _a_item);
+    res = lonelyinteger(_a);
     cout << res;
     
     return 0;
