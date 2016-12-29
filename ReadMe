@@ -1,0 +1,24 @@
+Learn C++ Overview:
+
+
+C++ is middle-level language, as it comprises a combination of both high-level and low-level langauge features
+
+Object-Oriented Programming
+	
+	Encapsulation
+	Data Hiding
+	Inheritance
+	Polymorphism
+
+Standard Libraries
+	
+		1. The core language giving all the building blocks including variables, data types and literals
+
+		2. The C++ standard Library giving a rich set functions manipulating files, strings
+
+		3. The standard Template Library(STL) giving a rich set of methods manipulating data structures
+
+The ANSI standard:
+		
+		ANSI standard is an attempt to ensure that C++ is protable -- that code you write for Microsoft's compiler will compile without errors...
+
