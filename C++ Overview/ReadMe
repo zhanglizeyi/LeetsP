@@ -1,23 +1,57 @@
-Learn C++ Overview:
-
+<h1>Learn C++ Overview:</h1>
 
 C++ is middle-level language, as it comprises a combination of both high-level and low-level langauge features
 
-Object-Oriented Programming
+<h2>Object-Oriented Programming</h2>
+	<ul>
+		Encapsulation
+		Data Hiding
+		Inheritance
+		Polymorphism
+	</ul>
+
+<h2>Standard Libraries:</h2>
 	
-	Encapsulation
-	Data Hiding
-	Inheritance
-	Polymorphism
+		<ul>
+			<ol>
+				1. The core language giving all the building blocks including variables, data types and literals
+			</ol>
+			<ol>
+				2. The C++ standard Library giving a rich set functions manipulating files, strings
+			</ol>
+			<ol>
+				3. The standard Template Library(STL) giving a rich set of methods manipulating data structures
+			</ol>
+		</ul>
 
-Standard Libraries
-	
-		1. The core language giving all the building blocks including variables, data types and literals
+<h2>Linux Installation</h2>
 
-		2. The C++ standard Library giving a rich set functions manipulating files, strings
-
-		3. The standard Template Library(STL) giving a rich set of methods manipulating data structures
+		Check version of C++: g++ -v
 
 
+<h2>C++ Program basic idea</h2>
 
-		
+	<ul>
+		<ol>
+			<b>Object</b> - objects have properties and behaviors. 
+			Example: A dog has properties - color, name, breed as well as behaviors - wagging, barking, eating. 
+			An object is an instance of a class.
+
+			狗会有很多不同的性质，但是object是它的实例。
+		</ol>
+		<ol>
+			<b>Class</b> - A class can be defined as a template/blueprint that describes the behaviors/states that object of its type support.
+
+			蓝图，模板
+		</ol>
+		<ol>
+			<b>Methods</b> - A method is basically a behavior. A class can contain many methods. It is in methods where the logics are written, data is manipulated and all the actions are executed.
+			
+			一个class里面可以有多个methods，methods是要逻辑性写出，data是会被处理的
+		</ol>
+		<ol>
+			<b>Instance Variables</b> - Each obejct has its unique set of instance variables. An obejct's state is created by the values assigned to these instance variables.
+
+			每个object都有自己的特殊的一套实例vars, object
+		</ol>
+	</ul>
