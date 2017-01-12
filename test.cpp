@@ -14,9 +14,6 @@ int main () {
   int b = 10;
 
   ptr = &b;
-
-
-
   
   return 0;
 }
