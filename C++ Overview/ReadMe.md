@@ -448,13 +448,28 @@ C++ is middle-level language, as it comprises a combination of both high-level a
 						the formal parameter of the function. In this case, 
 						changes made to the parameter inside the function have no effect on the argument.
 
+	Original value can not be changed or modified. locally stroed by the function parameter in stack memory location. If change the value of function parameter, it is changed for the current function only but it not change the value of variable inside the caller function such as main().
+
+
 	call by pointer		Method copies the address of an argument into the 
 						formal parameter. inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.
 
 	call by  reference 	Method copies the reference of an argument into the 
 						formal parameter. Inside the function, the reference is used to acess the actual argument used in the call. This means that changes made to the parameter affect the argument.
 
-	
+	Original value is changed or modified, bc pass in reference(address). Here, address of the value is passed in the function, so actual and formal arguments shares the same address sapce. Hence, any value changed inside the function, is reflected inside as well as outside the function.
+
+	Call by value 						call by reference 
+	This method copy original value 	Copy address of arguments into 
+	into function as a Arguments   		function as a arguments
+
+	Changes made to the parameter     	Changes made to the parameter affect
+	inside the function have no 		the argument. Because address is 
+	effect on the Argument 				used to access the acual argument
+
+	Actual and formal arguments will	Actual and formal arguments will 
+	be created in different memory 		be created in same memory location
+	location
 
 
 
