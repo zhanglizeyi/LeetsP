@@ -291,6 +291,197 @@ C++ is middle-level language, as it comprises a combination of both high-level a
 	Arithmetic Operators
 
 
+	operator 		Description 				Ex
+	+				Addss two operands			A + B
+
+	-				Subtracts second 
+					operand from the first 		A - B 
+
+	* 				Multiplies both operands	A * B 
+	
+	/				Divides numerator byte      B / A 
+					denumerator 				
+
+	%				Modulus Operator and 		B % A
+					remainder of after an 
+					integer division 
+
+	++ 				Increment operator 			A++ 
+					increases integer value 
+					by one 
+
+	_ _				Decrement opertor 			A-- 
+					decreases integer value
+					by one 
+
+
+	Relational Operators			
+
+	Operator 		Description 				Ex
+	==				Checks if values of two 	A==B is not true
+					operands are euql or not
+
+	!=				Checks if the values of two
+					Operands are euqal not 
+
+	>
+
+	<
+
+	>= 
+
+	<= 
+
+
+
+	Logic Operators
+
+	&&		and
+
+	||		or
+
+	!		negate
+
+
+
+	Bitwise Operators
+
+	p 	q	p&q		p|q		p^q
+	0   0 	0 		0 		0
+
+	0 	1   0 		1 		1
+
+	1  	1 	1 		1 		0
+
+	1 	0   0 		1    	1
+
+	if A = 60 and B = 13 in Binary
+	
+	A = 0011 1100
+	B = 0000 1101
+
+	A&B = 0000 1100   12
+
+	A|B = 0011 1101   61
+
+	A^B = 0011 0001   49
+
+	~A = 1100 1110 
+
+
+	<< Binary left shift operator, the left operands value is moved left 
+		by the number of bits sepcified by the right operand.
+
+		A = 0011 1100 
+	ex: A << 2 will give 240            1111 0000
+
+
+	>> Binary Right Shift Operator. The left operands value is moved right
+		by the number of bits specified by the right operands. 
+
+		A >> 2 will give 15 which is 0000 1111
+
+
+	Misc Operators:
+
+	Operator 			Description
+	sizeof				returns the size of a variable.
+
+	condition ? x : y	If condition is true ? then it returns value x
+						otherwise y
+
+	,					causes a sequence of operations to be performed
+
+	.(dot) and -> 		used to reference indvidual members of classes, 
+	(arrow)				structures, and unions.
+
+	Cast 				convert one data type to another. 
+
+	& 					returns the address of an variable. &a is address
+
+	* 					is pointer to a vaiable. *a is variable var
+
+
+<h2>C++ Loop Types</h2>
+
+	Loop Type 			Description
+	while loop 			repeats a statement or group of statements while
+						a given condition is true.
+
+	for loop 			Execute a sequence of statements multiple times and
+						abbreviates the code that manages the loop variable
+
+	do...while Loop 	Like a while statement, except that it tests the 
+						condition at the end of the loop
+
+
+
+<h2>Function</h2>
+
+	A function declaration tells the compiler about a function's name, return type, and parameters.
+	A function definition provides the actual body of the function.
+
+	strcat() -> concatenate two strings
+	memcpy() -> copy one memory location to another location and many more 				function
+
+
+	Defining a Function
+
+		ex: return_type function_name( parameter list ){
+			body of the function
+		}
+
+	A C++ function definition consists of a function header and a function body. 
+
+		Return type: A function may return a value. The return_type is the 
+					 data type of the value the function returns. Some functions perform the desired operations without returning a value like "void".
+		Function Name: The function name and the parameter list together 					constitute the function signature.	
+
+
+<h2>Function Arguments</h2>
+
+	function use arguments, it must declare variables that accept the values of the arguments. These variables are called the "formal parameters" of the function.
+
+	Call Type 			Description
+
+	call by value 		Method copies the actual value of an  argument into
+						the formal parameter of the function. In this case, 
+						changes made to the parameter inside the function have no effect on the argument.
+
+	call by pointer		Method copies the address of an argument into the 
+						formal parameter. inside the function, the address is used to access the actual argument used in the call. This means that changes made to the parameter affect the argument.
+
+	call by  reference 	Method copies the reference of an argument into the 
+						formal parameter. Inside the function, the reference is used to acess the actual argument used in the call. This means that changes made to the parameter affect the argument.
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
