@@ -472,10 +472,48 @@ C++ is middle-level language, as it comprises a combination of both high-level a
 	location
 
 
+<h2>Random number</h2>
+	
+	Math Operations in C++ , built-in function
+
+	<h4>double cos(double);</h4> --> take an angle (as a double) and returns the cosine
+
+	<h4>double sin(double);</h4> --> take an angle (as a double) and returns the sine
+
+	<h4>double tan(double);</h4> --> take an angle (as a double) and returns the tangent
+
+	<h4>double log(double);</h4>	--> take an angle (as a double) and returns the log of that number
+
+	<h4>double pow(double, double);</h4> --> first is a number is base and the second is the power u wish to raise it 
+
+	<h4>double hypot(double, double);</h4> --> if u pass this function the length of two sides of a right triangle, it will return u the length of the hypotenuse
+	c = sqrt root(a^2 + b^2)
+
+	<h4>double sqrt(double);</h4> take a number of double and sqrt root
+
+	<h4>int abs(int);</h4> returns the absolute value fo an integer that is passed to it
+
+	<h4>double fabs(double);</h4> This function returns the absolute value of any decimal number passed to it. 
+
+	<h4>double floor(double);</h4> Finds the integer which is less than or equal to the argument passed to it. 
 
 
+<h2>Arrays</h2>
+	
+	Specifies the type of the elements and the number of elements required by an array as follows:
 
+		type arrayName [arraySize];
 
+	array size must be an integer
+
+		double balance[10];
+
+	Initializing Arrays
+
+		double balance[5] = { 1000.0, 2.0, 3.4, 17.0, 50.0 };
+		double balance[] = { 1000.0, 2.0, 3.4, 17.0, 50.0 };
+
+	
 
 
 
