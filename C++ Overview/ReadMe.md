@@ -649,8 +649,68 @@ C++ is middle-level language, as it comprises a combination of both high-level a
 
 		<fstream>	This file declares services for user-controlled file 					processing. File...
 
+
+<h2>Data Structure</h2>
+
+		Structure is another user defined data type which allows u to combine data items of different kinds
+
+		Title
+
+		Author
+
+		Subject
+
+		Book ID
+
+
+		Defining a structure(defines a new data type, with more than one memeber):
+
+			struct [structure tag]{
+				member definition;
+				member definition;
+					:
+					:
+
+			} [one or more structure variables];
+
+	Ex: 
+		struct Books {
 		
+			char title[50];
+			char author[50];
+			char subject[100];
+			int book_id;
 		
+		}books;
+
+	Acceessing structure members:
+		Use the member access operator(.)
+
+	
+	Pointer to structures:
+		struct Books * struct_pointer;
+
+		struct_pointer = &Book1;
+
+		struct_pointer->title;	
+
+
+	The typeDef Keyword(easier way to define structs or u could "alias" types u create):
+			typedef struct{
+
+				char title[50];
+				char author[50];
+				char subject[100];
+				int book_id;
+
+			}Books;
+
+	Books book1, book2;
+
+		typedef long int * ip;
+
+		ip x, y, z;
+
 
 
 
