@@ -27,6 +27,14 @@ public:
         return helpDepthSum(nestedList, 1);   
     }
 
+    /*
+		建立一个helper method然后放进去 const linked list
+		
+
+
+    */
+
+
     int helpDepthSum(const vector<NestedInteger>& nest, int dep){
     	int sum = 0;
 
