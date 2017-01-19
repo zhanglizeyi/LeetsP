@@ -711,12 +711,149 @@ C++ is middle-level language, as it comprises a combination of both high-level a
 
 		ip x, y, z;
 
+<h2>C++ class definitions</h2>
+
+	class followed by the class name/class body and enclosed by a pair of curly braces.
+
+		class Box {
+			public: 
+				double length;
+				double breadth;
+				double height;
+		};
+
+	Define C++ objects:
+
+		Box Box1; //Declare Box1 of type Box
+
+	Accessing the data members:
+
+		using (.) to calling class veriable 
 
 
 
 
 
 
+<h2>C++ File and Streams</h2>
+
+	Using the iostream standard library, which provides cin and cout methods
+
+	Read and write from a file, library called fstream
+
+	Data Type 			Description
+	ofstream			This data type represents the output file stream
+						and is used to create files and to write information to files
+
+	ifstream			This data type represents the input file stream and is 
+						used to read information from file
+
+	fstream				This data type represents the filr stream generally, and
+						has the capabilities of both ofstream and ifstream which means it can create files, write information to files, and read infomation from files
+
+Open a File:
+	
+	void open(const char *filename, ios::openmode mode);
+
+	Mode Flag 			Description
+	ios::app 			Append mode. all output to that file to be appended to
+						the end
+
+	ios::ate 			open a file for output and move the read/write control 
+						to the end of file
+
+	ios::in  			open file to read
+
+	ios::out 			open file for write
+
+	ios::trunc			if the file exists, its contents will be truncated before 
+						opening file
+
+
+	ofstream outfile;
+
+	( << ) output information
+	( >> ) input information
+
+
+File Position Pointers:
+
+	Both "istream" and "ostream" provide member functions for repositiong the file-position pointer
+
+	member function "seekg" (seek get) for istream and seekp (seek put) for ostream
+
+	//position to the nth byte of fileObject(ios::beg)
+	fileObject.seekg(n);
+
+	//position n bytes forward in fileObejct
+	fileObejct.seekg(n, ios::cur);
+
+	//position n bytes back from end of fileObject
+	fileObject.seekg(n, ios::end);
+
+	//position at end of fileObject
+	fileObject.seekg(0, ios::end);
+
+	Concept 					Description
+	class member function 		has its definition or its prototype within the
+								class definition like any other variable
+
+	class access modifiers		class member can be defined as public, private 
+								or protected. By default members would be private
+
+	constructor & destructor	constructor -> new object of class is created
+								destructor -> created object is deleted
+
+	Copy 						creates an object by initializing it with an
+								object of the same class, which has been created
+								previously
+
+	friend						A "friend" function is permitted full access
+								to private and protected members of a class
+
+	inline						An inline function, the compiler tries to expand
+								the code in the body of the function in place of a
+								call to the function
+
+	"this" pointer 				Every object has a special pointer "this" 
+								which points to the object itself
+
+	Pointer C++ Class 			done exactly the same way a pointer to a structure
+								is. In fact a class is really just a structure with functions in it
+
+	"static" memeber of class 	Both data members and function members of a class
+								can be declared as static
+
+<h2>C++ Inheritance</h2>
+
+	Class - writing completely new data members and member functions, the programmer can designate that the new class should inherit the members of an existing class. This existing class is called the "base" class, and the new class is referred to as the "derived" class
+
+	The idea of inheritance implements the "is a" relationship
+
+Base & Derived Classes:
+	
+	A class can be derived from more than one classes, which means it can inherit data and functions from multiple base classes. 
+
+	class derived-class: access-specifier base-class
+
+	access-sepcifier is one of "public, protected, or private"
+
+
+Access Control and Inheritance:
+
+	Access 			public 			protected			private
+	Same class 		yes 			yes					yes	
+	Derived class 	yes 			yes					no
+	outside class 	yes 			no 					no
+
+	-Constructors, destructors and copy constructors of the base class
+	-Overloaded operators of the base class
+	-The friend functions of the base class
+
+Multiple Inheritances:
+	
+	Class derived-class: access baseA, access baseB...
+	Where access is one of public, protected, or private and would be given for every base class and they will be separated by comma as shown above. 
 
 
 
