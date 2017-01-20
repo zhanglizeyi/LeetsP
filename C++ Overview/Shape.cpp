@@ -26,14 +26,30 @@ public:
 	}
 };
 
+class Triangle: public Shape{
+public:
+	Triangle(int a=0; int b=0;):Shape(a,b){
+		int area(){
+			cout << "Triangle class area: " << endl;
+			return (width*height/2);
+		}
+	}
+};
+
 int main(){
 	
+	Shape *shape;
 	Rectangle rect;
+
+	Triangle tri(10,7);
 
 	rect.setWith(5);
 	rect.setHeight(10);
 
 	cout << "Area: " << rect.area() << endl;
+
+	shape = &tri;
+	shape->area();
 
 	return 0;
 }

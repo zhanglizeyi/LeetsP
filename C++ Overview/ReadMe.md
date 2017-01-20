@@ -856,8 +856,16 @@ Multiple Inheritances:
 	Where access is one of public, protected, or private and would be given for every base class and they will be separated by comma as shown above. 
 
 
+<h2>Overloading(operator and function)</h2>
 
+	Which is called "function overloading" and "operator overloading"
 
+Function overloading in C++:
+	
+	the operator can not be overload -->
+		::		.*		.		?:
+
+	
 
 
 
