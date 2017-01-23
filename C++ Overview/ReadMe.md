@@ -865,6 +865,68 @@ Function overloading in C++:
 	the operator can not be overload -->
 		::		.*		.		?:
 
+
+<h2> Data Encapsulation in C++ </h2>
+
+	Program statements(code): This is the part of a program that performs actions and they called functions
+
+	Program data: The data is the information of the program which affected by the program functions.
+
+	Encapsulation is an Object Oriented Programming concept
+		把data和functons合在一起，然后保证他们的安全性，from ouside interface
+
+	Data encapsulation: mechanism of bundling the data, and functions that use them and data abstraction is mechanism of exposing only the interfaces and hiding the implementation details from the user.
+
+	C++ supports the properties of encapsulation and data hiding through the creation of user-defined types, called classes. A class can contains Public, Private, and Protected. 
+
+
+<h2>Interfaces in C++(Abstract Classes)</h2>
+
+	C++ interfaces are implmented using abstract classes and these abstract classes should not be confused with data abstraction which is a concept of keeping implementation details separate from associated data
+
+	A class is made abstract by declaring at least one of its functions as pure virtual function. A pure virtual function is specified by placing "=0" in its declaration as:
+
+			class Box{
+				public: 
+					//pure virtual function
+					virtual double getVolum() = 0;
+				
+				private:
+					double length;
+					double breadth;
+					double height;
+			};
+
+	Classes that can be used to instantiate objects are called concrete classes
+
+
+
+<h2>C++ Exception Handling</h2>
+
+	throw: A program throws an exception when a problem shows up. 
+
+	catch: A program catches an exception with an exception handler at the place in a program where you want to handle the problem. 
+
+	try: A try block identifies a block of code for which particular exceptions will be activated. It's followed by one or more catch blocks
+
+	Ex:
+		try{
+			//protected code
+		}
+		catch( ExceptionName e1 )
+		{
+			//catch block
+		}
+		catch( ExceptionName e2 )
+		{
+			//catch block 
+		}
+		catch( ExceptionName eN )
+		{
+			//catch block
+		}
+
+
 	
 
 
