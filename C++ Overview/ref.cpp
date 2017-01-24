@@ -10,7 +10,7 @@ int main(){
 	cout << "d: " <<  d << endl;
 	cout << "e: " << e << endl;
 
-	&e = 10;
+	e = 10;
 
 	cout << "d: " <<  d << endl;
 	cout << "e: " << e << endl;
