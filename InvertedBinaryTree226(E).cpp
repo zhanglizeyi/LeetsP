@@ -27,7 +27,7 @@ public:
 			if(p != NULL){
 				s.push(p->left);
 				s.push(p->right);
-				swap(p->left, p->right);
+				swapFunc(p->left, p->right);
 				
 			}
 		}
@@ -41,7 +41,15 @@ public:
 		// }
 		return root;
 	}
+
+	void swapFunc(TreeNode* l, TreeNode* r){
+		TreeNode* tmp = l;
+		l = r;
+		r = tmp;
+	}
 };
+
+
 
 int main(){
 
