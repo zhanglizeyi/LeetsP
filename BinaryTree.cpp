@@ -30,7 +30,7 @@ struct node{
 	struct node* right;
 
 	//for insert
-}
+};
 
 /*
 	lookup():
