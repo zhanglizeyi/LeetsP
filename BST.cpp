@@ -9,10 +9,10 @@ BST:
 
 */
 
-#include <iosteam>
+#include <iostream>
 #include <queue>
 #include <stack>
-#include <cmatch>
+#include <cmath>
 #include <vector>
 
 using namespace std;
@@ -55,19 +55,69 @@ public:
 	void inoder(TreeNode*);
 	void postoder(TreeNode*);
 	void display(TreeNode*, int);
-	BST(){ root = NULL };
-	~BST();
+	bool isBST(TreeNode*);
+	BST(){};
+	~BST(){};
 };
 
+bool BST::isBST(TreeNode* r){
+	/*
+		1. left sub less than parent
+		2. right sub greater then parent
+		3. left and right must also follow 1,2
+	*/
+	if(r == NULL) return true;
+	queue<TreeNode*> s;
+	s.push(r);
+
+	while(!s.empty()){
+		TreeNode* t = s.front();
+		cout << "val: " << t->data <<endl;
+		s.pop();
+		if(t->left != NULL){
+			if(t->left->data < t->data)
+				s.push(t->left);
+			else return false;
+		}
+		if(t->right != NULL){
+			if(t->right->data > t->data) 
+				s.push(t->right);
+			else return false;
+		}
+	}
+
+	return true;
+}
+
 void BST::insert(int data){
-
-
+	
 }
 
 
 int main(){
 
+	BST sol;
+
+	/*tree:
+					 4
+				   /   \
+				  2	    7
+				 / \   / \
+                1   3  5  9
+	*/
+
+	TreeNode* r = new TreeNode(4);
+	r->left = new TreeNode(2);
+	r->right = new TreeNode(7);
+	r->left->left = new TreeNode(1);
+	r->left->right = new TreeNode(3);
+	r->right->left = new TreeNode(5);
+	r->right->right = new TreeNode(1);
+
+	//sol.search(r, 1);
 	
+	string res = sol.isBST(r) == 1 ? "true" : "false"; 
+	cout << "isBST: " << res <<endl;
 
 	return 0;
 }

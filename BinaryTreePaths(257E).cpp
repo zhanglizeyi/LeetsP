@@ -13,7 +13,6 @@ struct TreeNode{
 	TreeNode(int x): data(x), left(NULL), right(NULL){}
 };
 
-
 class Solution{
 public:
 	vector<string> binaryTreePaths(TreeNode* root){
