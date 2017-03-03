@@ -1,8 +1,9 @@
+// package cse12_hw1;
 // Uncomment the following line AFTER you have generated the Javadocs,
 // when you are ready to do problem 1, part B (JUnit testing) and you 
 // have moved this file to the countertest folder.
 
-//package countertest;
+package countertest;
 
 public class Counter {
 

@@ -11,17 +11,6 @@ int main(){
 	string s2;
 	int j=1;
 
-	for(int i=0; i<s.size(); i++){
-		cout << "outter loop: " <<endl;
-		while(j < s.size()){
-			if(s[i] == s[j])
-				cout << "same i:" << s[i] << " j: " << s[j] <<endl;
-			j++;
-		}
-		j=i+1;
-	}
-
-
 
 	for(int i=0; i<s.size(); i++){
 		res.insert(s[i]);

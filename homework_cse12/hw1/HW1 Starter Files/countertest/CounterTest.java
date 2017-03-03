@@ -27,7 +27,6 @@ public class CounterTest
 		assertEquals(0, counter2.getCount());
 	}
 
-	@Test
 	public void testIncrement() {
 		System.out.println("Checking Proper Increment");
 		counter.increment();

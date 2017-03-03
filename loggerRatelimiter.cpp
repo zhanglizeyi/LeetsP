@@ -33,7 +33,7 @@ public:
 		map[message] = timestamp + 10; 
 		return true;
 	}
-}
+};
 
 int main(){
 
