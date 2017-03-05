@@ -2,7 +2,7 @@
  * TODO - your comments here
  */
 
-package hw2;
+// package hw2;
 
 import java.util.*;
 
@@ -20,6 +20,11 @@ public class MyLinkedList<E> extends AbstractList<E> {
     /** Constructor to create singleton Node */
     public Node(E element)
     {
+      head.data = element;
+      head.next = tail;
+      tail.prev = head; 
+      nelems = 0; 
+
     }
     /** Constructor to create singleton link it between previous and next 
       *   @param element Element to add, can be null
@@ -28,10 +33,13 @@ public class MyLinkedList<E> extends AbstractList<E> {
       */
     public Node(E element, Node prevNode, Node nextNode)
     {
+
+
     }
     /** Remove this node from the list. Update previous and next nodes */
     public void remove()
     {
+
     }
     /** Set the previous node in the list
       *  @param p new previous node
@@ -67,6 +75,7 @@ public class MyLinkedList<E> extends AbstractList<E> {
     {
       return (E) null; // XXX-CHANGE-XXX
     } 
+
   }
   
   /** ListIterator implementation */ 
