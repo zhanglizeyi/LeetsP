@@ -8,8 +8,8 @@ import java.util.*;
 
 public class MyLinkedList<E> extends AbstractList<E> {
   
-  private int nelems;
-  private Node head;
+  private int nelems; //number of elements on list
+  private Node head; 
   private Node tail;
   
   protected class Node {
@@ -20,10 +20,6 @@ public class MyLinkedList<E> extends AbstractList<E> {
     /** Constructor to create singleton Node */
     public Node(E element)
     {
-      head.data = element;
-      head.next = tail;
-      tail.prev = head; 
-      nelems = 0; 
 
     }
     /** Constructor to create singleton link it between previous and next 
@@ -144,17 +140,23 @@ public class MyLinkedList<E> extends AbstractList<E> {
   /** Only 0-argument constructor is define */
   public MyLinkedList()
   {
+    head = new Node(null);
+    tail = new Node(null, head, null);
+    nelems = 0;
   }
   @Override
   public int size()
   {
     // need to implement the size method
-    return 0; // XXX-CHANGE-XXX 
+    return nelems; // XXX-CHANGE-XXX 
   }
   
   @Override
   public E get(int index) throws IndexOutOfBoundsException
   {
+    
+
+
     return (E) null;  // XXX-CHANGE-XXX
   }
   
@@ -168,6 +170,18 @@ public class MyLinkedList<E> extends AbstractList<E> {
     public void add(int index, E data) 
     throws IndexOutOfBoundsException,NullPointerException
   {
+    Node current = head;
+    int currentInd = 0;
+    while(currentInd < index){
+      current = current.next;
+      currentInd++;
+    }
+    Node temp = new Node(data);
+    temp.next = current;
+    temp.prev = current.prev;
+    current.prev = temp;
+    current.prev.next = temp;
+    nelems++;  
   }
   /** Add an element to the end of the list 
     * @param data data to add
@@ -175,6 +189,13 @@ public class MyLinkedList<E> extends AbstractList<E> {
     */ 
   public boolean add(E data) throws NullPointerException
   {
+    Node last = tail.prev;
+    Node temp = new Node(data);
+    temp.next = tail;
+    temp.prev = last;
+    tail.prev = temp;
+    last.next = temp;
+    nelems++; 
     return true; // XXX-CHANGE-XXX
   }
   
