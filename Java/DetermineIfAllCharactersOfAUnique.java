@@ -25,4 +25,5 @@ public class DetermineIfAllCharactersOfAUnique{
 
 		System.out.println(isUnique("abbbbbbbbb"));
 	}
+	
 }
