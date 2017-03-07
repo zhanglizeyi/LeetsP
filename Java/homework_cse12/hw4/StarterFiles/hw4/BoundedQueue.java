@@ -8,7 +8,7 @@
  * capacity of the BoundedQueue.  The constructor should throw an
  * IllegalArgumentException if the specified capacity is negative.
  */
-package hw4;
+//package hw4;
 public interface BoundedQueue<E> {
 
   /**

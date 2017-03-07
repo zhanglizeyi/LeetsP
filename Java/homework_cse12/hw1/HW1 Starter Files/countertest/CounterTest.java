@@ -70,5 +70,7 @@ public class CounterTest
 		assertEquals(0, counter.decrement());
 		assertEquals(0, counter2.decrement());
 
+		
+
 	}
 }

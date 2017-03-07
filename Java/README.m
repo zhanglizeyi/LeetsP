@@ -183,10 +183,14 @@ Java Overview:
 
 
 
+	Big-O:
+		f(n) = O(g(n)), if there are positive constants c and n0 such that f(n) <= c*(g(n)) for all n > n0
+	Big-Omega:
+		f(n) = Omega(g(n)), if there are positive constants c and n0 such that f(n) >= c*(g(n)) for all n > n0 
 
 
 
-
+	Big-O is capturing the growth of running time, but it is not capturing real running time
 
 
 
