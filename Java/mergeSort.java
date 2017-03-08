@@ -1,6 +1,10 @@
 import java.util.*;
 
 
+//O(n log(n)) 
+//space complexity neeed more 
+
+
 public class mergeSort{
 
 	public static void mergesort(int[] arr, int[] temp, int left, int right){
@@ -51,56 +55,5 @@ public class mergeSort{
 			System.out.println(test[i]);
 		}
 	}
-
-
-
-
-	public static void mergeSort(int [ ] a)
-	{
-		int[] tmp = new int[a.length];
-		mergesort(a, tmp,  0,  a.length - 1);
-	}
-
-
-	private static void mergeSort(int [ ] a, int [ ] tmp, int left, int right)
-	{
-		if( left < right )
-		{
-			int center = (left + right) / 2;
-			mergeSort(a, tmp, left, center);
-			mergeSort(a, tmp, center + 1, right);
-			merge(a, tmp, left, center + 1, right);
-		}
-	}
-
-
-    private static int[] merge(int[ ] a, int[ ] tmp, int left, int right, int rightEnd )
-    {
-
-    	//0 1 2   with arry {2, 1, 3}
-        int leftEnd = right - 1; // 1
-        int k = left; //0
-        int num = rightEnd - left + 1; // 1
-
-        while(left <= leftEnd && right <= rightEnd){
-            if(a[left] <= a[right])
-                tmp[k++] = a[left++];
-            else
-                tmp[k++] = a[right++];
-        }
-
-        while(left <= leftEnd)    // Copy rest of first half
-            tmp[k++] = a[left++];
-
-        while(right <= rightEnd)  // Copy rest of right half
-            tmp[k++] = a[right++];
-
-        // Copy tmp back
-        for(int i = 0; i < num; i++, rightEnd--)
-            a[rightEnd] = tmp[rightEnd];
-
-        return tmp; 
-    }
-
 }
 
