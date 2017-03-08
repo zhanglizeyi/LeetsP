@@ -194,3 +194,27 @@ Java Overview:
 
 
 
+
+
+	Sort Algorithm:
+
+		Insertion sort: 
+		Selection sort:
+		Merge sort:
+		Quick sort:
+		Bubble sort:
+		//Check sort: 
+
+		stack:
+		queue:
+		Priority Queue:
+		Heap:
+
+		BST:
+		BFS:
+		DFS: 
+		tries:
+
+
+
+

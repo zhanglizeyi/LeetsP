@@ -24,9 +24,7 @@ public class Deque12<E> implements BoundedDeque<E>{
 
   	public boolean addFront(E e){
 
-  		for(int i=0; i<arry.length; i++){
-
-  		}
+  		
 
   		return false;
   	}
