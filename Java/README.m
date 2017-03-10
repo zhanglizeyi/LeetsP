@@ -198,11 +198,11 @@ Java Overview:
 
 	Sort Algorithm:
 
-		Insertion sort: 
-		Selection sort:
-		Merge sort:
-		Quick sort:
-		Bubble sort:
+		Insertion sort: O(n) O(nlogn) O(n^2)
+		Selection sort: O(n) O(nlogn) O(n^2)
+		Merge sort: O(nlogn)
+		Quick sort: O(nlogn) O(n^2)
+		Bubble sort: O(nlogn) 
 		//Check sort: 
 
 		stack:
