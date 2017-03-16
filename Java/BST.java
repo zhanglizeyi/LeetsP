@@ -193,6 +193,7 @@ class BST <T extends Comparable<? super T>> {
 		System.out.println("after Tree : ");		
 		b.display(b.root);
 
+
 		System.out.println("looking for 25: "+ b.toFind(25));
 		System.out.println("looking for 35: "+ b.toFind(35));
 

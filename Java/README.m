@@ -203,6 +203,7 @@ Java Overview:
 		Merge sort: O(nlogn)
 		Quick sort: O(nlogn) O(n^2)
 		Bubble sort: O(nlogn) 
+		heap sort: O()
 		//Check sort: 
 
 		stack:
@@ -216,5 +217,23 @@ Java Overview:
 		tries:
 
 
+	General-purpose implementation:
 
+Interface   hashTable		Resizable array  Tree          	 LinkedList      
+			implementation  implementation   Implementation  implementation
+
+Set         HashSet          				 TreeSet	
+List 						 ArrayList						 LinkedList
+Queue
+Deque		               	 ArrayDeque						 LinkedList
+Map 		HashMap							  TreeMap
+
+
+HashTable + LinkedList
+Implementation 
+
+LinkedHashSet
+
+
+LinkedHashMap
 
