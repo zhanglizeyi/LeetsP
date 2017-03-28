@@ -193,9 +193,7 @@ Java Overview:
 	Big-O is capturing the growth of running time, but it is not capturing real running time
 
 
-
-
-
+<h2>
 	Sort Algorithm:
 
 		Insertion sort: O(n) O(nlogn) O(n^2)
@@ -215,10 +213,10 @@ Java Overview:
 		BFS:
 		DFS: 
 		tries:
+</h2>
 
-
-	General-purpose implementation:
-
+<h1>General-purpose implementation:</h1>
+<p>
 Interface   hashTable		Resizable array  Tree          	 LinkedList      
 			implementation  implementation   Implementation  implementation
 
@@ -236,4 +234,67 @@ LinkedHashSet
 
 
 LinkedHashMap
+</p>
+
+
+<h1>Classes for web Access</h1>
+<p>
+	import java.net.*;
+	import java.io.*;
+
+	URL url = new URL("www.Destination.com");
+	InputStream ins = url.openStream(); //object
+	InputStreamReader isr = new InputStreamReader(ins);
+	BufferedReader web = new BufferedReader(isr);
+
+	String line;
+	while((line = web.readLine()) != null){
+		System.out.println(line);
+	}
+</p>
+
+<h1>Find Time Complexcity Rule</h1>
+	
+<ol>
+	<li>
+		+, -, *, /, if, --> 1 step
+	</li>
+	<li>
+		Loop, subrotine  --> n step
+	</li>
+	<li>
+		memory access  --> 1 step
+	</li>
+</ol>
+
+
+	For example: 
+
+		int sum = 0;	//instruction is 1  c0
+		for(int i=0; i<sum.length; i++){ //n times
+			if(...)    // 1 instruc  c1
+				sum++; //...         c2
+			sum += 2;  //1 instruc   c3
+		}
+
+	Calculation: c0 + n(c1 + c3) , c2 is in c1 and excue only once
+
+
+<h2>Array:</h2>
+	<ol>
+		<li>search O(n)</li>
+		<li>access O(1)</li>
+		<li>insert O(n)</li>
+		<li>Delete O(n)</li>
+	</ol>	
+
+<h2>Two-D Array</h2>
+<p>
+</p>
+
+
+
+
+
+
 
