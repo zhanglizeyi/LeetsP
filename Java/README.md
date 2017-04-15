@@ -290,6 +290,15 @@ LinkedHashMap
 
 <h2>Two-D Array</h2>
 <p>
+	There has one question that can help with finding same length words
+	like: 
+		loop, book 
+
+			b o o k
+		l   0 1 0 1 
+		o   
+		o
+		p
 </p>
 
 
