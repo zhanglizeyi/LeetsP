@@ -303,6 +303,34 @@ LinkedHashMap
 
 
 
+<h1>JAVA STYLE BOOK</h1>
+<h2>1.1 - 1.3</h2>
+<h3>object & port relationship</h3>
+<p>
+	Object, Class, ClassLoader, String, Thread and java.lang.reflect
+	Those API will provide behavior of object and port relationship
+</p>
+
+<h2> 2.1 </h2>
+
+	Basic for statement:
+		for(for init; expression ; for update) statement
+		for(; expression ; for update) statement
+		for(;; for update) statement
+		for(for init; ; for update) statement
+		for(;;) statement
+
+<h2> 3.10.6 </h2>
+	
+	\b 		/* \u0008: 退格BS */
+	\t 		/* \u0009: 水平制表符HT */
+	\n      /* \u000a: 换行LF */
+	\f      /* \u000c: 换页FF */
+	\r 		/* \u000d: 回车CR */
+	\"		/* \u0022: 双引号 */
+	\' 		/* \u0027: 单引号 */
+	\\      /* \u005c: 反斜杠\ */
+	OctalEscape /* \u0000~\u00ff: 从八进制值 */
 
 
 
