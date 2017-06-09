@@ -105,9 +105,14 @@ public class StringPractice{
 		list3 = null;
 
 		printMe(list2);
+		System.out.println();
 		removeStuff(list2, 2, 5);
+		System.out.println();
 		printMe(list2);
+		System.out.println();
 		reverseMe(list2);
+		// System.out.println();
+		// printMe(list2);
 	}
 
 	public static void printMe(List<String> l1){
@@ -118,21 +123,22 @@ public class StringPractice{
 
 	public static List<String> removeStuff(List<String> l, int start, int end){
 
+		//l.subList(start, end);
 		for(int i=start; i<end; i++){
 			l.remove(i);
 		}
-
 		return l;
 	}
 
-	public static List<String> reverseMe(List<String> l){
+	public static void reverseMe(List<String> l){
 		List<String> temp = new LinkedList<String>();
 
 		for(int i=l.size()-1; i>=0; i--){
-			temp.add(l.get(i));
+			System.out.printf("%s ", l.get(i));
 		}
-
-		return temp;
+		// ListIterator<String> bobby = l.ListIterator(l.size());
+		// while(bobby.hasPrevious())
+		// 	System.out.printf("%s ", bobby.previous());
 	}
 
 
@@ -141,7 +147,6 @@ public class StringPractice{
 			return 1;
 		else
 			return n * fact(n-1);
-
 		//5 * (4 * ( 3 * ( 2 * 1)))
 		// 120
 	}
