@@ -333,5 +333,17 @@ LinkedHashMap
 	OctalEscape /* \u0000~\u00ff: 从八进制值 */
 
 
+<h2>Example of Java String</h2>
+
+<h3>import java.lang.String</h3>
+<li>String.startsWith(String)</li>
+<li>String.endsWith(String)</li>
+
+<h3>String s = "abcasdfasdf"</h3>
+<li>s.indexOf('a')</li>
+<li>s.indexOf('a', 5)</li>
+
+
+
 
 
