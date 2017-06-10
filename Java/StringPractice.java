@@ -113,7 +113,71 @@ public class StringPractice{
 		reverseMe(list2);
 		// System.out.println();
 		// printMe(list2);
+
+
+		//Tutorial 8 Converting Lists to Arrays
+		System.out.println("\n=============Tutorial 8==============");
+
+		String[] stuff = {"babies", "watermelong", "melons", "fudge"};
+		LinkedList<String> theList = new LinkedList<String>(Arrays.asList(stuff));
+		theList.add("zzzzz");
+		theList.addFirst("firstthing");
+
+		//convert back to array
+		stuff = theList.toArray(new String[theList.size()]);
+
+		for(String i : stuff)
+			System.out.println(i);
+
+
+		//Tutorial 9 Collections method sort
+		System.out.println("\n==========Tutorial 9==========");
+
+		String[] crap = {"apple", "banana", "cheese", "bacon"};
+		List<String> l1 = Arrays.asList(crap);
+
+		Collections.sort(l1);
+		System.out.printf("%s\n", l1);
+
+		//reverse way
+		Collections.sort(l1, Collections.reverseOrder());
+		System.out.printf("%s\n", l1);
+
+		//Tutorial 10 Methods reverse and copy
+		System.out.println("\n=============Tutorial 10===============");
+		Character[] ray = {'p', 'a', 'b'};
+		List<Character> l = Arrays.asList(ray);
+		System.out.println("List is : " + l);
+
+		//reverse and print out the list
+		Collections.reverse(l);
+		System.out.println("After reverse : " + l);
+
+		//createa new array and a new list
+		List<Character> listCopy = Arrays.asList(new Character[3]);
+
+		//copy contents of list into listcopy
+		Collections.copy(listCopy, l);
+		System.out.println("After copy : " + listCopy);
+
+
+		//Tutorial 11 Collections Methods fill
+		System.out.println("\n============Tutorial 11==============");
+
+		//fill colloction with crap
+		Collections.fill(listCopy, 'X');
+		System.out.println("After fill list : ");
+		output(listCopy);
+
 	}
+
+	//Tutorial 11
+	private static void output(List<Character> thelist){
+		for(Character i : thelist)
+			System.out.printf("%s", i);
+
+		System.out.println();
+	} 
 
 	public static void printMe(List<String> l1){
 		for(int i=0; i<l1.size(); i++){
@@ -133,12 +197,12 @@ public class StringPractice{
 	public static void reverseMe(List<String> l){
 		List<String> temp = new LinkedList<String>();
 
-		for(int i=l.size()-1; i>=0; i--){
-			System.out.printf("%s ", l.get(i));
-		}
-		// ListIterator<String> bobby = l.ListIterator(l.size());
-		// while(bobby.hasPrevious())
-		// 	System.out.printf("%s ", bobby.previous());
+		// for(int i=l.size()-1; i>=0; i--){
+		// 	System.out.printf("%s ", l.get(i));
+		// }
+		ListIterator<String> bobby = l.listIterator(l.size());
+		while(bobby.hasPrevious())
+			System.out.printf("%s ", bobby.previous());
 	}
 
 

@@ -343,6 +343,31 @@ LinkedHashMap
 <li>s.indexOf('a')</li>
 <li>s.indexOf('a', 5)</li>
 
+<h3>ListIterator</h3>
+<p>ListIterator<String> listI = new l.listIterator(l.size());</p>
+<p>while(listI.hasPrevious())
+		System.out.printf("%s", listI.previous());</p>
+
+
+<h3>Conversion of array to list and list to array</h3>
+<p>String[] s = {"abc", "bas", "asd"}
+	LinkedList<String> l = new LinkedList<String>(Arrays.asList(s))
+	l.add("a")
+	l.remove("abc");
+
+	//convert back
+	s = l.toArray(new String[theList.size()]);
+
+	for(String i : stuff)
+		System.out.println(i);
+</p>
+
+
+
+
+
+
+
 
 
 
