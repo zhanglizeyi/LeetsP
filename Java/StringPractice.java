@@ -169,6 +169,23 @@ public class StringPractice{
 		System.out.println("After fill list : ");
 		output(listCopy);
 
+		//Tutorial 12 addAll
+		System.out.println("\n============Tutorial 12============");
+
+		//convert stuff arrya to alist
+		String[] stuff1 = {"apples", "beef", "corn", "ham"};
+		List<String> list4 = Arrays.asList(stuff1);
+
+		ArrayList<String> list5 = new ArrayList<String>();
+		list5.add("youtube");
+		list5.add("google");
+		list5.add("yahoo");
+
+		Collections.addAll(list5, stuff1);
+
+		//convert arraylist to list
+		printMe(list5);
+
 	}
 
 	//Tutorial 11
