@@ -229,7 +229,7 @@ public class StringPractice{
 		System.out.printf("\nq.poll(third) %s", q.remove("third"));
 	
 		//Tutorial 16 HashSet
-		System.out.println("==========Tutorial 16 HashSet=========");
+		System.out.println("\n==========Tutorial 16 HashSet=========");
 
 		String[] string = {"apple", "banana", "orange", "peach", "pinapple"};
 		List<String> list6 = Arrays.asList(string);
@@ -240,7 +240,56 @@ public class StringPractice{
 		Set<String> set = new HashSet<String>(list6);
 		System.out.printf("%s ", set);
 
+		//Tutorial 17 Generic Methods
+		System.out.println("\n==========Tutorial 17 Methods=========");
+
+		Integer[] iray = {1,2,3,4,5};
+		Character[] cray = {'a','b','c','d'};
+
+
+
+		//Tutorial 18 Implementing a Generic Method
+		System.out.println("\n==========Tutorial 18=========");
+
+		//Generic method
+		PrintArray(iray);
+		PrintArray(cray);		
+
+		//Tutorial 19 Generic Return Types
+		System.out.println("\n==========Tutorial 19=========");
+
+		System.out.println(max(23,42,1));
+
 	}
+
+	public static <T extends Comparable<T>> T max(T a, T b, T c){
+		T m = a;
+
+		if(b.compareTo(a) > 0)
+			m = b;
+
+		if(c.compareTo(m) > 0)
+			m = c;
+
+		return m;
+	}
+
+	//Tutorial 18
+	public static <T> void PrintArray(T[] x){
+		for(T i : x)
+			System.out.printf("%s ", i);
+	}
+
+	//Tutorial 17
+	// public static void PrintArray(Integer[] i){
+	// 	for(Integer a : i)
+	// 		System.out.printf("%s ", a);
+	// }
+
+	// public static void PrintArray(Character[] c){
+	// 	for(Character b : c)
+	// 		System.out.printf("%s ", b);
+	// }
 
 	//Tutorial 14
 	public static void printStack(Stack<String> st){
