@@ -259,17 +259,24 @@ public class StringPractice{
 		System.out.println("\n==========Tutorial 19=========");
 
 		System.out.println(max(23,42,1));
+		System.out.println(max("T", "tots", "chicken"));
 
 	}
 
 	public static <T extends Comparable<T>> T max(T a, T b, T c){
 		T m = a;
 
-		if(b.compareTo(a) > 0)
+		System.out.println(b.compareTo(a) > 0);		
+
+		if(b.compareTo(a) > 0) //tots compateTo apples
 			m = b;
 
-		if(c.compareTo(m) > 0)
+		System.out.println(m);
+
+		if(c.compareTo(m) > 0)//chicken compareTo 
 			m = c;
+
+		System.out.println(m);
 
 		return m;
 	}
