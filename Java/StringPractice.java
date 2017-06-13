@@ -162,7 +162,7 @@ public class StringPractice{
 
 
 		//Tutorial 11 Collections Methods fill
-		System.out.println("\n============Tutorial 11==============");
+		System.out.println("\n============Tutorial 11 Collections==============");
 
 		//fill colloction with crap
 		Collections.fill(listCopy, 'X');
@@ -170,7 +170,7 @@ public class StringPractice{
 		output(listCopy);
 
 		//Tutorial 12 addAll
-		System.out.println("\n============Tutorial 12============");
+		System.out.println("\n============Tutorial 12 addAll============");
 
 		//convert stuff arrya to alist
 		String[] stuff1 = {"apples", "beef", "corn", "ham"};
@@ -186,6 +186,69 @@ public class StringPractice{
 		//convert arraylist to list
 		printMe(list5);
 
+		//Tutorial 13 frequency and disjoint
+		System.out.println("\n===========Tutorial 13 Frequency============");
+
+		//count frequency of word in list
+		System.out.println(Collections.frequency(list5, "youtube"));
+
+		//two lists have no elements in common
+		boolean tof = Collections.disjoint(list5, list1);
+		System.out.println(tof);
+
+
+		//Tutorial 14 Stacks, push, pop
+		System.out.println("\n===============Tutorial 14 Stacks==============");
+
+		Stack<String> stack = new Stack<String>();
+		System.out.println(stack.push("bottom"));
+		printStack(stack);
+		stack.push("up");
+		printStack(stack);
+		stack.push("left");
+		printStack(stack);
+		stack.push("right");
+		printStack(stack);
+
+		//Tutorial 15 Queue 
+		System.out.println("\n==========Tutorial 15 Queue=========");
+		PriorityQueue<String> q = new PriorityQueue<String>();
+
+		//offer, add 
+		q.offer("first");
+		q.offer("second");
+		q.add("third");
+
+		//element, peek
+		System.out.printf("\nq.peek() %s", q.peek());
+		System.out.printf("\nq.element() %s", q.element());
+
+		//remvoe, poll
+		System.out.printf("\nq.remove(first) %s", q.remove("first"));
+		System.out.printf("\nq.poll(second) %s", q.poll());
+		System.out.printf("\nq.poll(third) %s", q.remove("third"));
+	
+		//Tutorial 16 HashSet
+		System.out.println("==========Tutorial 16 HashSet=========");
+
+		String[] string = {"apple", "banana", "orange", "peach", "pinapple"};
+		List<String> list6 = Arrays.asList(string);
+
+		System.out.printf("%s ", list6);
+		System.out.println();
+
+		Set<String> set = new HashSet<String>(list6);
+		System.out.printf("%s ", set);
+
+	}
+
+	//Tutorial 14
+	public static void printStack(Stack<String> st){
+		System.out.println(st.search("right"));
+
+		while(!st.empty()){
+			System.out.println(st.pop());
+		}
 	}
 
 	//Tutorial 11
