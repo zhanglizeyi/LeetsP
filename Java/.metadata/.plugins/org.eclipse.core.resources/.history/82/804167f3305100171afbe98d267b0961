@@ -1,0 +1,15 @@
+//Tutorial 26 Learning about threads
+
+import java.util.*;
+
+public class Tuna {
+	String name;
+	int time;
+	Random r = new Random();
+	
+	public Tuna(String x){
+		name = x;
+		time = r.nextInt(999);
+	}
+	
+}

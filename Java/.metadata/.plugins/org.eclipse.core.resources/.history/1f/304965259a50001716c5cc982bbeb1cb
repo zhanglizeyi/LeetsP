@@ -1,0 +1,12 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class DrawOval extends JPanel{
+	
+	private int d = 10;
+	
+	public void paintComponent(Graphics g){
+		super.paintComponent(g);
+	}
+	
+}

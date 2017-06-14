@@ -1,0 +1,12 @@
+import java.awt.*;
+import javax.swing.*;
+
+public class TheWindow extends JFrame{
+	private JSlider slider;
+	private DrawOval myPanel;
+	
+	public TheWindow(){
+		super("The Title");
+		myPanel = new DrawOval();
+	}
+}
