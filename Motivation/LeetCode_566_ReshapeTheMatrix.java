@@ -10,11 +10,11 @@ The reshaped matrix need to be filled with all the elements of the original matr
 If the 'reshape' operation with given parameters is possible and legal, output the new reshaped matrix; Otherwise, output the original matrix.
 
 Solution:
-1. queue/array list to get all the numbers in sorting order and create new matrix to convert queue/array back to matrix;
+1. queue/array list to get all the numbers in sorting order and create new matrix to convert queue/array back to matrix.(4ms)
 
-2. Iteration run oringal matrix while proccessing the new matrix with the new column and row. 
+2. Iteration run oringal matrix while proccessing the new matrix with the new column and row. (slow)
 
-3. Devide and Mol to soulve the problem as create a counter and make row as counter devide by input c and column mol input c ->  [counter / c][counter % c]. Every time when counter pass the input c, the [counter / c] will increase by the devition and moludle will handle the incresement of column. 
+3. Devide and Mol to soulve the problem as create a counter and make row as counter devide by input c and column mol input c ->  [counter / c][counter % c]. Every time when counter pass the input c, the [counter / c] will increase by the devition and moludle will handle the incresement of column.(4ms) 
 */
 
 class Solution {
