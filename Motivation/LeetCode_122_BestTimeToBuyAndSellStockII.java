@@ -1,7 +1,14 @@
+<<<<<<< HEAD
 /*
 Problem:
 
  Say you have an array for which the ith element is the price of a given stock on day i.
+=======
+/**
+Problem:
+
+Say you have an array for which the ith element is the price of a given stock on day i.
+>>>>>>> 11929e384beab1f83d4e5a9b6cb89ad381e69976
 
 Design an algorithm to find the maximum profit. You may complete as many transactions as you like (i.e., buy one and sell one share of the stock multiple times).
 
@@ -25,17 +32,35 @@ Example 3:
 Input: [7,6,4,3,1]
 Output: 0
 Explanation: In this case, no transaction is done, i.e. max profit = 0.
+<<<<<<< HEAD
+=======
+
+Solution:
+	Iteration too add each stocks peaks
+
+>>>>>>> 11929e384beab1f83d4e5a9b6cb89ad381e69976
 */
 
 class Solution {
     public int maxProfit(int[] prices) {
+<<<<<<< HEAD
         int result = 0;
 
+=======
+        
+        int result = 0;
+        
+        //One iteration 
+>>>>>>> 11929e384beab1f83d4e5a9b6cb89ad381e69976
         for(int i=1; i<prices.length; i++) {
             if(prices[i] > prices[i-1]) {
                 result += (prices[i] - prices[i-1]);
             }
         }
+<<<<<<< HEAD
         return result;
+=======
+       return result;
+>>>>>>> 11929e384beab1f83d4e5a9b6cb89ad381e69976
     }
 }
