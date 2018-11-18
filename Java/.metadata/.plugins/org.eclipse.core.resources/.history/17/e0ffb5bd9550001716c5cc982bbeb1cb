@@ -1,9 +1,0 @@
-import java.awt.*;
-import java.swing.*;
-
-public class IntroApp {
-	public void paint(Graphics g){
-		super.paint(g);
-		g.drawString("woo sakldjfkla ", 25, 25);
-	}
-}

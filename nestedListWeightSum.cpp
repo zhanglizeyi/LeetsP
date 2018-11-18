@@ -29,9 +29,6 @@ public:
 
     /*
 		建立一个helper method然后放进去 const linked list
-		
-
-
     */
 
 
@@ -53,6 +50,6 @@ public:
 	    return sum;
     }
 
-}
+};
 
 
